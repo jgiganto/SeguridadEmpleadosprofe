@@ -1,0 +1,33 @@
+﻿@model SeguridadEmpleados.Models.EMP
+
+@{
+    ViewBag.Title = "Editar";
+}
+
+<h2>Editar datos de empleado</h2>
+
+@using (Html.BeginForm())
+{
+    <input type="hidden" value="@Model.EMP_NO" name="empno"/>
+    <div>
+        <label>Apellido: </label>
+        <input type="text" name="apellido" value="@Model.APELLIDO"
+               class="form-control"/>
+    </div>
+    <div>
+        <label>Oficio: </label>
+        <input type="text" name="oficio" value="@Model.OFICIO"
+               class="form-control"/>
+    </div>
+    <div>
+        <label>Salario: </label>
+        <input type="text" name="salario" value="@Model.SALARIO"
+               class="form-control"/>
+    </div>
+    <div>
+        <button type="submit" class="btn-default">
+            Modificar datos
+        </button>
+    </div>
+}
+

@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "_DatosEmpleado";
+}
+
+<h2>_DatosEmpleado</h2>
+
+@if (Request.IsAuthenticated)
+{
+    <span style="color:aqua">
+        Bienvenido @HttpContext.Current.User.Identity.Name
+        @Html.ActionLink("Cerrar Sesion","CerrarSesion","Empleados")
+    </span>
+}

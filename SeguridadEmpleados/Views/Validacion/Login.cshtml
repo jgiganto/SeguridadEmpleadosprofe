@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Validación de empleados</h2>
+<form method="post">
+    <div>
+        <label>Apellido: </label>
+        <input type="text" name="usuario" class="form-control"/>
+    </div>
+    <div>
+        <label>Número de empleado: </label>
+        <input type="text" name="password" class="form-control"/>
+    </div>
+    <div>
+        <button type="submit" class="btn-success">Verificar empleado</button>
+    </div>
+</form>
+<h2 style="color:red">
+    @ViewBag.Mensaje
+</h2>
